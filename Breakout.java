@@ -12,7 +12,7 @@ import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class BreakoutSolution extends GraphicsProgram {
+public class Breakout extends GraphicsProgram {
 
     /** Width and height of application window in pixels */
     public static final int APPLICATION_WIDTH = 400;
@@ -173,9 +173,7 @@ public class BreakoutSolution extends GraphicsProgram {
          * the x location of the paddle is set at where the mouse is minus half a paddle's width,
          * and the height remains the same
          */
-        if ((e.getX() < getWidth() - PADDLE_WIDTH/2) && (e.getX() > PADDLE_WIDTH/2)) {
-            paddle.setLocation(e.getX() - PADDLE_WIDTH/2, getHeight() - PADDLE_Y_OFFSET - PADDLE_HEIGHT);
-        }
+
 
     }
 
